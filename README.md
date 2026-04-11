@@ -33,3 +33,15 @@ infrastructure as code, and cloud deployment.
 ## Fun Fact
 
 I enjoy spending time alone listening to music and would love to travel see new people explore cultures and societies. I also love to watch movies and play my favorite game PUBM Mobile. 
+
+
+
+## My Week 2 Infrastructure
+
+ 
+
+Runner VM: Nandar-runner
+
+Runner IP: 192.168.1.111
+
+Pipeline status: [![Hello Pipeline](https://github.com/Nesarahmad234/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml/badge.svg)](https://github.com/Nesarahmad234/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml)
