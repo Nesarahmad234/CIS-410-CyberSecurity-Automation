@@ -16,7 +16,7 @@
       --blue-text: #0C447C;
       --green-bg:  #EAF3DE;
       --green-text:#27500A;
-      --amber-bg:  #FFF2CC;
+      --amber-bg:  #020100;
       --amber-text:#633806;
       --red-bg:    #FFC7CE;
       --red-text:  #9C0006;
@@ -76,7 +76,7 @@
 
     /* ── Main layout ── */
     .main {
-      max-width: 860px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 28px 20px 48px;
     }
@@ -220,7 +220,10 @@
         <div class="topbar-sub">Deployment Status Dashboard</div>
       </div>
     </div>
-    <div class="env-badge">{{ env }}</div>
+    <div style="display:flex; gap:10px; align-items:center;">
+  <div class="env-badge">{{ env }}</div>
+  <span class="badge badge-green">SECURE</span>
+</div>
   </nav>
 
   <main class="main">
