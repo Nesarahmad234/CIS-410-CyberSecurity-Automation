@@ -2,6 +2,10 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Values printed after terraform apply. Both buckets shown.
 # ─────────────────────────────────────────────────────────────────────────────
+# terraform/week6/outputs.tf
+# ─────────────────────────────────────────────────────────────────────────────
+# Values printed after terraform apply. Both buckets shown.
+# ─────────────────────────────────────────────────────────────────────────────
 
 output "tf_state_bucket_name" {
   description = "Terraform state bucket name"
@@ -13,7 +17,18 @@ output "tf_state_bucket_url" {
   value       = google_storage_bucket.tf_state.url
 }
 
+output "logs_bucket_name" {
+  description = "Logs bucket name"
+  value       = google_storage_bucket.logs.name
+}
+
+output "logs_bucket_url" {
+  description = "GCS URL of the logs bucket"
+  value       = google_storage_bucket.logs.url
+}
+
 output "project_id" {
   description = "GCP project this was deployed to"
   value       = var.project_id
 }
+
